@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color:#3f3f3f;
+  height: 100%;
 }
 
 .App-logo {
@@ -17,7 +18,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
@@ -36,4 +37,90 @@
   100% {
     transform: translateY(0px);
   }
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.card-body > .card-title {
+  font-family: 'Lobster', cursive;
+  background-color: rgb(27, 27, 27);
+  ;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+h2 {
+  color: #3046c5;
+}
+
+p {
+  padding: 24px;
+  color: azure;
+}
+
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.site-footer {
+  background-color: rgb(27, 27, 27);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 0;
+}
+
+.navbar-brand {
+  max-width: 4rem;
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+
+.navbar-dark {
+  background-image: rgba(0, 0, 0, 0.75);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+.nav-label {
+  color: white;
 }
