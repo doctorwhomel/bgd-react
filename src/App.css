@@ -96,7 +96,7 @@ p {
 }
 
 .navbar-dark {
-  background-image: rgba(0, 0, 0, 0.75);
+  opacity: .75;
   padding-top: 12px;
   padding-bottom: 12px;
 }

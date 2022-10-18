@@ -15,12 +15,12 @@ const items = [
     key: 1,
   },
   {
-    src: "https://picsum.photos/id/456/1200/400",
+    src: FeatImg1,
     altText: "Slide 2",
     key: 2,
   },
   {
-    src: "https://picsum.photos/id/678/1200/400",
+    src: FeatImg1,
     altText: "Slide 3",
     key: 3,
   },
@@ -53,8 +53,9 @@ function Example(args) {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
+        style={{ width: "100vw" }}
       >
-        <img src={item.src} alt={item.altText} />
+        <img className="d-block w-100" src={item.src} alt={item.altText} />
       </CarouselItem>
     );
   });

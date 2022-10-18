@@ -13,7 +13,7 @@ import BGDLogo from "../app/assets/img/BGD_logo_button.png";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <Navbar dark color="dark" sticky="top" expand="md" className="flex-column">
+    <Navbar dark color="black" sticky="top" expand="md" className="flex-column">
       <NavbarBrand href="/">
         <img src={BGDLogo} alt="BGDLogo" style={{ scale: "69%" }} />
       </NavbarBrand>
