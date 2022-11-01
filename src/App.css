@@ -62,6 +62,7 @@ h2 {
 
 p {
   padding: 24px;
+  font-size: 20px;
   color: azure;
 }
 
@@ -84,21 +85,26 @@ p {
 }
 
 .navbar-brand {
+  opacity: 1;
   max-width: 4rem;
   margin-right: 2rem;
+  margin-top: 0rem;
 }
 
 .navbar-brand img {
+  opacity: 1;
   width: 100%;
   height: 100%;
-  margin-right: 2rem;
-  max-width: 4rem;
+}
+
+.nav-link {
+  opacity: 1;
+
 }
 
 .navbar-dark {
+  background-color: rgba(0, 0, 0);
   opacity: .75;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .page-enter {

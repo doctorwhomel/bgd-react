@@ -1,6 +1,7 @@
 import { Container, Col, Row, CardImg, Card } from "reactstrap";
 import BGDLogo from "../app/assets/img/BGD_logo.png";
 import Example from "../components/BigTopCarousel";
+import DisplayFeaturedGames from "../display/DisplayFeaturedGames";
 
 const HomePage = () => {
   return (
@@ -15,14 +16,14 @@ const HomePage = () => {
           <Col>
             <CardImg
               className="mx-auto d-block"
-              style={{ width: "35vw" }}
+              style={{ width: "35vw", paddingTop: "24px" }}
               src={BGDLogo}
               alt="Bellingham Game Dev"
             />
           </Col>
         </Row>
         <Row>
-          <Col xs="9">
+          <Col>
             <p className="text-left">
               Bellingham Game Dev showcases local independent game developers
               and their games. The intent is to both promote the games and
@@ -32,6 +33,7 @@ const HomePage = () => {
             </p>
           </Col>
         </Row>
+        <DisplayFeaturedGames />
       </Container>
     </>
   );
