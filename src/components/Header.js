@@ -26,27 +26,27 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem style={{ paddingLeft: 15 }}>
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/games">
               Games
             </NavLink>
           </NavItem>
           <NavItem style={{ paddingLeft: 15 }}>
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/studios">
               Studios
             </NavLink>
           </NavItem>
           <NavItem style={{ paddingLeft: 15 }}>
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/artists">
               Artists
             </NavLink>
           </NavItem>
           <NavItem style={{ paddingLeft: 15 }}>
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/about">
               About
             </NavLink>
           </NavItem>
           <NavItem style={{ paddingLeft: 15 }}>
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/contact">
               Contact
             </NavLink>
           </NavItem>

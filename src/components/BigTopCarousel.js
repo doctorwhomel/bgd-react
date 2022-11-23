@@ -5,8 +5,11 @@ import {
   CarouselControl,
   CarouselIndicators,
   CarouselCaption,
+  CarouselControlProps,
 } from "reactstrap";
 import FeatImg1 from "../app/assets/img/Sirens-Shanty-Screenshot-wide.jpg";
+import FeatImg2 from "../app/assets/img/Sirens-Shanty-Screenshot-wide.jpg";
+import FeatImg3 from "../app/assets/img/Sirens-Shanty-Screenshot-wide.jpg";
 
 const items = [
   {
@@ -15,12 +18,12 @@ const items = [
     key: 1,
   },
   {
-    src: FeatImg1,
+    src: FeatImg2,
     altText: "Slide 2",
     key: 2,
   },
   {
-    src: FeatImg1,
+    src: FeatImg3,
     altText: "Slide 3",
     key: 3,
   },
@@ -52,7 +55,7 @@ function Example(args) {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.src}
+        key={item.key}
         style={{ width: "100vw" }}
       >
         <img className="d-block w-100" src={item.src} alt={item.altText} />

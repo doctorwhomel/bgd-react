@@ -9,6 +9,11 @@ import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import { fetchGames } from "./features/games/gamesSlice";
+import GamesDir from "./pages/GamesDir";
+import StudiosDir from "./pages/StudiosDir";
+import ArtistsDir from "./pages/ArtistsDir";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -22,6 +27,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/games" element={<GamesDir />} />
+        <Route path="/studios" element={<StudiosDir />} />
+        <Route path="/artists" element={<ArtistsDir />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>

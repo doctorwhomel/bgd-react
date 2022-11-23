@@ -10,6 +10,7 @@ import {
 import { Card, Icon } from "react-native-elements";
 import { baseUrl } from "../../shared/baseUrl";
 import * as Animatable from "react-native-animatable";
+import { CardBody } from "reactstrap";
 
 const RenderPost = (props) => {
   const { post } = props;
@@ -24,14 +25,22 @@ const RenderPost = (props) => {
         delay={1000}
         ref={view}
       >
-        <Card containerStyle={styles.cardContainer}>
-          <Card.Image source={post.image}>
-            <View style={{ justifyContent: "center", flex: 1 }}>
-              <Text style={styles.cardText}>{post.author}</Text>
-            </View>
-          </Card.Image>
-          <Text style={{ margin: 20 }}>{post.caption}</Text>
-          <View style={styles.cardRow}></View>
+        <Card color="dark">
+          <CardBody>
+            <Card.Image source={post.image}>
+              <View
+                style={{
+                  justifyContent: "center",
+                  flex: 1,
+                  backgroundColor: "black",
+                }}
+              >
+                <Text style={styles.cardText}>{post.author}</Text>
+              </View>
+            </Card.Image>
+            <Text style={styles.cardText}>{post.caption}</Text>
+            <View style={styles.cardRow}></View>
+          </CardBody>
         </Card>
       </Animatable.View>
     );
@@ -41,8 +50,9 @@ const RenderPost = (props) => {
 const styles = StyleSheet.create({
   cardContainer: {
     padding: 0,
-    margin: 0,
-    marginBottom: 20,
+    margin: 100,
+    marginBottom: 100,
+    color: "dark",
   },
 
   cardRow: {
@@ -57,8 +67,9 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 20,
     textAlign: "center",
-    color: "white",
+    color: "black",
     fontSize: 20,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
 });
 

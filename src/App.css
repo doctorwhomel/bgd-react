@@ -47,7 +47,7 @@ h2,
 h3,
 .card-body > .card-title {
   font-family: 'Lobster', cursive;
-  background-color: rgb(27, 27, 27);
+  color: rgb(27, 27, 27);
   ;
 }
 
@@ -64,6 +64,10 @@ p {
   padding: 24px;
   font-size: 20px;
   color: azure;
+}
+
+.card.customCard {
+  background: rgb(27, 27, 27);
 }
 
 .card-img-overlay .card-title {
@@ -104,7 +108,7 @@ p {
 
 .navbar-dark {
   background-color: rgba(0, 0, 0);
-  opacity: .75;
+  opacity: .9;
 }
 
 .page-enter {
