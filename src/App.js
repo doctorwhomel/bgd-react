@@ -14,12 +14,13 @@ import StudiosDir from "./pages/StudiosDir";
 import ArtistsDir from "./pages/ArtistsDir";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import { fetchPosts } from "./features/posts/postsSlice";
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchGames());
+    dispatch(fetchPosts());
   }, [dispatch]);
 
   return (

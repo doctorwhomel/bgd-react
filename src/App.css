@@ -14,6 +14,8 @@
   }
 }
 
+
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -46,8 +48,9 @@ h1,
 h2,
 h3,
 .card-body > .card-title {
-  font-family: 'Lobster', cursive;
-  color: rgb(27, 27, 27);
+  font-family: 'Play', sans-serif;
+
+  color: azure
   ;
 }
 
@@ -61,18 +64,17 @@ h2 {
 }
 
 p {
-  padding: 24px;
   font-size: 20px;
   color: azure;
 }
 
-.card.customCard {
-  background: rgb(27, 27, 27);
+#mainBody{
+  padding: 24px;
 }
 
-.card-img-overlay .card-title {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+.card.customCard {
+  background: transparent;
+  border: none;
 }
 
 .row-content {
@@ -103,6 +105,7 @@ p {
 
 .nav-link {
   opacity: 1;
+  font-family: 'Play', sans-serif;
 
 }
 

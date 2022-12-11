@@ -10,7 +10,14 @@ const Footer = () => {
             <h5 className="nav-label">Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/" style={{ color: "gray", textDecoration: "none" }}>
+                <Link
+                  to="/"
+                  style={{
+                    color: "gray",
+                    textDecoration: "none",
+                    fontFamily: "'Play', sans-serif",
+                  }}
+                >
                   Home
                 </Link>
               </li>

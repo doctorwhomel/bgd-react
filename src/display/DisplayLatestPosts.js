@@ -2,16 +2,12 @@ import { useSelector } from "react-redux";
 import { Col, Row } from "reactstrap";
 //import DisplayCard from './DisplayCard';
 import AnimatedDisplayCard from "./AnimatedNewsCard";
-import { selectFeaturedGame } from "../features/games/gamesSlice";
+import { selectFeaturedPosts } from "../features/posts/postsSlice";
 import Error from "../components/Error";
 import Loading from "../components/Loading";
 
-const DisplayFeaturedGames = () => {
-  const items = useSelector((state) => [
-    selectFeaturedGame(state),
-    selectFeaturedGame(state),
-    selectFeaturedGame(state),
-  ]);
+const DisplayLatestPosts = () => {
+  const items = useSelector((state) => [selectFeaturedPosts(state)]);
 
   console.log("display items:", items);
 
@@ -27,8 +23,8 @@ const DisplayFeaturedGames = () => {
         }
         return (
           featuredItem && (
-            <Col md className="m-1" key={idx}>
-              <AnimatedDisplayCard item={featuredItem} color="dark" />
+            <Col key={idx}>
+              <AnimatedDisplayCard item={featuredItem} />
             </Col>
           )
         );
@@ -37,4 +33,4 @@ const DisplayFeaturedGames = () => {
   );
 };
 
-export default DisplayFeaturedGames;
+export default DisplayLatestPosts;

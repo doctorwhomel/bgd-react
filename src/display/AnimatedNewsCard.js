@@ -1,9 +1,16 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardImgOverlay,
+} from "reactstrap";
 
 const AnimatedDisplayCard = ({ item }) => {
-  const { image, name, description } = item;
+  const { image, headline, caption } = item;
   const [toggle, setToggle] = useState(false);
 
   const animatedStyle = useSpring({
@@ -19,11 +26,15 @@ const AnimatedDisplayCard = ({ item }) => {
   return (
     <animated.div style={animatedStyle}>
       <Card className="customCard">
-        <CardImg src={image} alt={name} />
-        <CardBody>
-          <CardTitle>{name}</CardTitle>
-          <CardText>{description}</CardText>
-        </CardBody>
+        <CardImg src={image} alt={headline} />
+        <CardImgOverlay>
+          <CardBody>
+            <CardTitle>
+              <strong>{headline}</strong>
+            </CardTitle>
+            <CardText>{caption}</CardText>
+          </CardBody>
+        </CardImgOverlay>
       </Card>
     </animated.div>
   );

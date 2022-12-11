@@ -25,14 +25,13 @@ const RenderPost = (props) => {
         delay={1000}
         ref={view}
       >
-        <Card color="dark">
+        <Card>
           <CardBody>
             <Card.Image source={post.image}>
               <View
                 style={{
                   justifyContent: "center",
                   flex: 1,
-                  backgroundColor: "black",
                 }}
               >
                 <Text style={styles.cardText}>{post.author}</Text>
