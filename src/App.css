@@ -136,4 +136,16 @@ p {
 
 .nav-label {
   color: white;
+  text-decoration: none;
+  font-family: 'Play', sans-serif;
+}
+
+.footerLink {
+  color: gray;
+  text-decoration: none;
+  font-family: 'Play', sans-serif;
+}
+
+.footerLink:hover {
+  color: white;
 }
